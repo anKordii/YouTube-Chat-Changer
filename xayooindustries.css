@@ -1,0 +1,57 @@
+.chat-addon{
+    background-color:#1e1f25;
+}
+#chat-input{
+    background-color:#161617;
+    border:0;
+    color: #777777;
+    padding:1rem;
+    border-radius:5px;
+}
+#chat-input:focus{
+    outline:0;
+    border:0;
+}
+#chat-save{
+    display:inline;
+    background-color: #161617;
+    color: #777777;
+    padding:1rem;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+#chat-save:focus{
+    background-color: #2a2a2b;
+}
+#chat-status:hover{
+    cursor:pointer;
+}
+.chat-options{
+    text-align: center;
+    margin-bottom: .50rem;
+}
+.chat-options button{
+    display:inline;
+    background-color: #3182ce;
+    color: white;
+    padding: .50rem;
+    border-radius: 16px;
+    border: 0;
+}
+.chat-options button:hover{
+    cursor:pointer;
+}
+.chat-options button:hover{
+    outline: none;
+}
+#e-chat-type{
+    background-color: #161617;
+    color: #777777;
+    border: 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+#e-chat-type:focus{
+    outline:0;
+}

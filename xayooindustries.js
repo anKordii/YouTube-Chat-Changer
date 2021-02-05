@@ -1,3 +1,34 @@
+if (localStorage.getItem(`e-chat-name`)) {
+
+}else if (!localStorage.getItem(`e-chat-name`)) {
+    localStorage.setItem('e-chat-name', 'poorchat');
+}
+
+if (localStorage.getItem(`e-chat-type`)) {
+
+}else if (!localStorage.getItem(`e-chat-type`)) {
+    localStorage.setItem('e-chat-type', 'twitch');
+}
+
+if (localStorage.getItem(`e-chat-custom`)) {
+
+}else if (!localStorage.getItem(`e-chat-custom`)) {
+    localStorage.setItem('e-chat-custom', 'https://youtube.com');
+}
+
+buttonChat();
+function buttonChat(){
+        console.log(`%c4uss [%cbutton%c]:%c Loaded enable button`, 'color:#ff5447; font-weight:bold', '', 'color:#ff5447; font-weight:bold', '')
+    
+        var btn = document.createElement("button");
+        btn.className = 'ytp-button';
+        btn.setAttribute("title", "Enable chat extension");
+        btn.setAttribute("id", "chat-status");
+        btn.setAttribute("onclick", "changechat();")
+        btn.innerHTML = '<img src="https://cdn.betterttv.net/emote/5ea7ab8ece7cbf62fe161737/3x" style="height: 100%;width: 100%;">';
+        document.querySelector("div.ytp-right-controls").appendChild(btn);
+}
+
 function changechat(){
     
     if(localStorage.getItem(`e-chat-type`) === 'twitch'){
